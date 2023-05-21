@@ -37,6 +37,7 @@ const defaultTheme = createTheme();
 
 export default function Album() {
   useEffect(()=>{
+    alert("login Success")
     const token = localStorage.getItem('token')
     fetch('http://localhost:3333/authen',{
         method: "POST",

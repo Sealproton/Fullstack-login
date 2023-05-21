@@ -56,6 +56,7 @@ export default function SignUp() {
           const result = await response.json();
           if(result.status === "ok"){
             alert("register Success")
+            window.location = "/login"
           }else{
             alert("register Fail")
           }
